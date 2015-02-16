@@ -1,0 +1,777 @@
+2015/02/09 19:38:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "login" seperti yang diminta.' in /Users/feb/HTDocs/framework/web/CController.php:483
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CController.php(270): CController->missingAction('login')
+#1 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/hotel/site/login
+---
+2015/02/09 19:40:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "pages_register.html" seperti yang diminta.' in /Users/feb/HTDocs/framework/web/CController.php:483
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CController.php(270): CController->missingAction('pages_register....')
+#1 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): CController->run('pages_register....')
+#2 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages_regi...')
+#3 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/hotel/site/pages_register.html
+HTTP_REFERER=http://localhost/hotel/site/login
+---
+2015/02/09 20:11:47 [error] [exception.CException] exception 'CException' with message 'Properti "WebUser.level" tidak didefinisikan.' in /Users/feb/HTDocs/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/auth/CWebUser.php(146): CComponent->__get('level')
+#1 /Users/feb/HTDocs/hotel/protected/components/WebUser.php(13): CWebUser->__get('level')
+#2 /Users/feb/HTDocs/hotel/protected/controllers/SiteController.php(42): WebUser->__get('level')
+#3 /Users/feb/HTDocs/framework/web/CController.php(306): SiteController->beforeAction(Object(CInlineAction))
+#4 /Users/feb/HTDocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/feb/HTDocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/hotel/
+HTTP_REFERER=http://localhost/hotel/site/login
+---
+2015/02/09 20:12:15 [error] [exception.CException] exception 'CException' with message 'Properti "WebUser.level" tidak didefinisikan.' in /Users/feb/HTDocs/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/auth/CWebUser.php(146): CComponent->__get('level')
+#1 /Users/feb/HTDocs/hotel/protected/components/WebUser.php(13): CWebUser->__get('level')
+#2 /Users/feb/HTDocs/hotel/protected/controllers/SiteController.php(62): WebUser->__get('level')
+#3 /Users/feb/HTDocs/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Users/feb/HTDocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/feb/HTDocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/feb/HTDocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#9 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hotel/
+HTTP_REFERER=http://localhost/hotel/site/login
+---
+2015/02/09 20:12:37 [error] [php] include(ObatSatuan.php): failed to open stream: No such file or directory (/Users/feb/HTDocs/framework/YiiBase.php:427)
+Stack trace:
+#0 /Users/feb/HTDocs/hotel/protected/views/site/index.php(22): spl_autoload_call()
+#1 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require()
+#2 /Users/feb/HTDocs/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Users/feb/HTDocs/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Users/feb/HTDocs/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Users/feb/HTDocs/hotel/protected/controllers/SiteController.php(62): SiteController->render()
+#6 /Users/feb/HTDocs/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Users/feb/HTDocs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Users/feb/HTDocs/framework/web/CController.php(286): SiteController->runAction()
+#9 /Users/feb/HTDocs/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Users/feb/HTDocs/hotel/index.php(14): CWebApplication->run()
+REQUEST_URI=/hotel/
+in /Users/feb/HTDocs/hotel/protected/views/site/index.php (22)
+in /Users/feb/HTDocs/hotel/protected/controllers/SiteController.php (62)
+in /Users/feb/HTDocs/hotel/index.php (14)
+2015/02/09 20:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/colorpicker/colorpicker.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/colorpicker/colorpicker.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/custom-plugins/picklist/picklist.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/custom-p...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/custom-plugins/picklist/picklist.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/css/fonts/ptsans/stylesheet.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/css/font...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/css/fonts/ptsans/stylesheet.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/css/mws-style.min.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/css/mws-...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/css/mws-style.min.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/bootstrap/css/bootstrap.min.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/bootstra...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/css/fonts/icomoon/style.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/css/font...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/css/fonts/icomoon/style.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/css/icons/icol16.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/css/icon...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/css/icons/icol16.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/css/icons/icol32.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/css/icon...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/css/icons/icol32.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/select2/select2.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/select2/select2.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/css/demo.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/css/demo...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/css/demo.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/jui/css/jquery.ui.all.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/jui/css/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/jui/css/jquery.ui.all.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/jui/jquery-ui.custom.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/jui/jque...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/jui/jquery-ui.custom.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/jui/css/jquery.ui.timepicker.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/jui/css/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/jui/css/jquery.ui.timepicker.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/css/mws-theme.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/css/mws-...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/css/mws-theme.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/css/themer.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/css/them...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/css/themer.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/jgrowl/jquery.jgrowl.css"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/jgrowl/jquery.jgrowl.css
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/js/libs/jquery-1.8.3.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/js/libs/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/js/libs/jquery-1.8.3.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/js/libs/jquery.mousewheel.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/js/libs/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/js/libs/jquery.mousewheel.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/js/libs/jquery.price.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/js/libs/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/js/libs/jquery.price.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/js/libs/jquery.placeholder.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/js/libs/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/js/libs/jquery.placeholder.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/custom-plugins/fileinput.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/custom-p...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/custom-plugins/fileinput.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/jui/js/jquery-ui-1.9.2.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/jui/js/j...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/jui/js/jquery-ui-1.9.2.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/jui/jquery-ui.custom.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/jui/jque...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/jui/jquery-ui.custom.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/jui/js/jquery.ui.touch-punch.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/jui/js/j...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/jui/js/jquery.ui.touch-punch.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/jui/js/timepicker/jquery-ui-timepicker.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/jui/js/t...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/jui/js/timepicker/jquery-ui-timepicker.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/select2/select2.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/select2/select2.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/custom-plugins/picklist/picklist.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/custom-p...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/custom-plugins/picklist/picklist.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/datatables/jquery.dataTables.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/datatables/jquery.dataTables.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/colorpicker/colorpicker-min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/colorpicker/colorpicker-min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/validate/jquery.validate-min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/validate/jquery.validate-min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/flot/jquery.flot.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/flot/jquery.flot.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/flot/plugins/jquery.flot.tooltip.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/flot/plugins/jquery.flot.tooltip.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/special/jquery.validate.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/special/jquery.validate.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/flot/plugins/jquery.flot.resize.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/flot/plugins/jquery.flot.resize.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/flot/plugins/jquery.flot.categories.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/flot/plugins/jquery.flot.categories.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/flot/plugins/jquery.flot.stack.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/flot/plugins/jquery.flot.stack.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/flot/plugins/jquery.flot.pie.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/flot/plugins/jquery.flot.pie.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/special/jquery.mousewheel.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/special/jquery.mousewheel.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/special/jquery.deserialize.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/special/jquery.deserialize.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/special/jquery.hotkeys.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/special/jquery.hotkeys.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/special/jquery.scrollto.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/special/jquery.scrollto.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/special/jquery.masked.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/special/jquery.masked.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/plugins/jgrowl/jquery.jgrowl-min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/plugins/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/plugins/jgrowl/jquery.jgrowl-min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/js/highcharts/highcharts.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/js/highc...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/js/core/mws.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/js/core/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/js/core/mws.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/js/core/themer.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/js/core/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/js/core/themer.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/js/buzz.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/js/buzz....')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/js/buzz.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/bootstrap/js/bootstrap.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/bootstra...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/bootstrap/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/js/highcharts/modules/exporting.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/js/highc...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/js/highcharts/modules/exporting.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/js/core/antrian.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/js/core/...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/js/core/antrian.js
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:12:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/images/mws-logo.png"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/images/m...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/images/mws-logo.png
+HTTP_REFERER=http://localhost/hotel/
+---
+2015/02/09 20:23:39 [error] [php] include(Session.php): failed to open stream: No such file or directory (/Users/feb/HTDocs/framework/YiiBase.php:427)
+Stack trace:
+#0 /Users/feb/HTDocs/hotel/protected/controllers/SiteController.php(140): spl_autoload_call()
+#1 /Users/feb/HTDocs/framework/web/actions/CInlineAction.php(49): SiteController->actionLogout()
+#2 /Users/feb/HTDocs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/feb/HTDocs/framework/web/CController.php(286): SiteController->runAction()
+#4 /Users/feb/HTDocs/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Users/feb/HTDocs/hotel/index.php(14): CWebApplication->run()
+REQUEST_URI=/hotel/site/logout
+in /Users/feb/HTDocs/hotel/protected/controllers/SiteController.php (140)
+in /Users/feb/HTDocs/hotel/index.php (14)
+2015/02/09 20:40:22 [error] [exception.CException] exception 'CException' with message 'Properti "UserLog.waktu" tidak didefinisikan.' in /Users/feb/HTDocs/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/feb/HTDocs/framework/db/ar/CActiveRecord.php(161): CComponent->__set('waktu', '2015-02-09 20:4...')
+#1 /Users/feb/HTDocs/hotel/protected/extensions/giix-components/GxController.php(229): CActiveRecord->__set('waktu', '2015-02-09 20:4...')
+#2 /Users/feb/HTDocs/framework/web/CController.php(306): GxController->beforeAction(Object(CInlineAction))
+#3 /Users/feb/HTDocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /Users/feb/HTDocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): CController->run('')
+#6 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mRoomType')
+#7 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/hotel/mRoomType
+---
+2015/02/10 10:21:32 [error] [exception.CException] exception 'CException' with message 'Properti "WebUser.level" tidak didefinisikan.' in /Users/feb/HTDocs/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/auth/CWebUser.php(146): CComponent->__get('level')
+#1 /Users/feb/HTDocs/hotel/protected/components/WebUser.php(13): CWebUser->__get('level')
+#2 /Users/feb/HTDocs/hotel/protected/views/layouts/main.php(466): WebUser->__get('level')
+#3 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#4 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#5 /Users/feb/HTDocs/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#6 /Users/feb/HTDocs/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="row...')
+#7 /Users/feb/HTDocs/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="row...')
+#8 /Users/feb/HTDocs/framework/web/CBaseController.php(206): COutputProcessor->run()
+#9 /Users/feb/HTDocs/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#10 /Users/feb/HTDocs/hotel/protected/views/layouts/column2.php(19): CBaseController->endContent()
+#11 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#12 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#13 /Users/feb/HTDocs/framework/web/CController.php(784): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#14 /Users/feb/HTDocs/hotel/protected/controllers/UserLevelController.php(11): CController->render('view', Array)
+#15 [internal function]: UserLevelController->actionView('1')
+#16 /Users/feb/HTDocs/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserLevelController), Array)
+#17 /Users/feb/HTDocs/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserLevelController), Object(ReflectionMethod), Array)
+#18 /Users/feb/HTDocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /Users/feb/HTDocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /Users/feb/HTDocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): CController->run('view')
+#22 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('userLevel/view')
+#23 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#25 {main}
+REQUEST_URI=/hotel/userLevel/view/1
+HTTP_REFERER=http://localhost/hotel/userLevel
+---
+2015/02/10 10:21:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause'. Statement SQL yang dijalankan: SELECT * FROM `module` `t` WHERE parent_id = '0' AND type = '1' ORDER BY `order` ASC.
+in /Users/feb/HTDocs/hotel/protected/views/layouts/main.php (467)
+in /Users/feb/HTDocs/hotel/protected/views/layouts/column2.php (19)
+in /Users/feb/HTDocs/hotel/protected/controllers/UserLevelController.php (11)
+2015/02/10 10:21:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause'. The SQL statement executed was: SELECT * FROM `module` `t` WHERE parent_id = '0' AND type = '1' ORDER BY `order` ASC' in /Users/feb/HTDocs/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Users/feb/HTDocs/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Users/feb/HTDocs/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /Users/feb/HTDocs/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Users/feb/HTDocs/hotel/protected/views/layouts/main.php(467): CActiveRecord->findAll('parent_id = '0'...')
+#4 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#5 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#6 /Users/feb/HTDocs/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#7 /Users/feb/HTDocs/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="row...')
+#8 /Users/feb/HTDocs/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="row...')
+#9 /Users/feb/HTDocs/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /Users/feb/HTDocs/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /Users/feb/HTDocs/hotel/protected/views/layouts/column2.php(19): CBaseController->endContent()
+#12 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#13 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#14 /Users/feb/HTDocs/framework/web/CController.php(784): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#15 /Users/feb/HTDocs/hotel/protected/controllers/UserLevelController.php(11): CController->render('view', Array)
+#16 [internal function]: UserLevelController->actionView('1')
+#17 /Users/feb/HTDocs/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserLevelController), Array)
+#18 /Users/feb/HTDocs/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserLevelController), Object(ReflectionMethod), Array)
+#19 /Users/feb/HTDocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#20 /Users/feb/HTDocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#21 /Users/feb/HTDocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('userLevel/view')
+#24 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#26 {main}
+REQUEST_URI=/hotel/userLevel/view/1
+HTTP_REFERER=http://localhost/hotel/userLevel
+---
+2015/02/10 10:21:49 [error] [exception.CException] exception 'CException' with message 'Properti "Module.level" tidak didefinisikan.' in /Users/feb/HTDocs/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/feb/HTDocs/framework/db/ar/CActiveRecord.php(145): CComponent->__get('level')
+#1 /Users/feb/HTDocs/hotel/protected/views/layouts/main.php(472): CActiveRecord->__get('level')
+#2 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#3 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#4 /Users/feb/HTDocs/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#5 /Users/feb/HTDocs/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="row...')
+#6 /Users/feb/HTDocs/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="row...')
+#7 /Users/feb/HTDocs/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /Users/feb/HTDocs/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /Users/feb/HTDocs/hotel/protected/views/layouts/column2.php(19): CBaseController->endContent()
+#10 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#11 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#12 /Users/feb/HTDocs/framework/web/CController.php(784): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#13 /Users/feb/HTDocs/hotel/protected/controllers/UserLevelController.php(11): CController->render('view', Array)
+#14 [internal function]: UserLevelController->actionView('1')
+#15 /Users/feb/HTDocs/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserLevelController), Array)
+#16 /Users/feb/HTDocs/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserLevelController), Object(ReflectionMethod), Array)
+#17 /Users/feb/HTDocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Users/feb/HTDocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /Users/feb/HTDocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): CController->run('view')
+#21 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('userLevel/view')
+#22 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/hotel/userLevel/view/1
+HTTP_REFERER=http://localhost/hotel/userLevel
+---
+2015/02/10 10:22:02 [error] [exception.CException] exception 'CException' with message 'Properti "Module.nama" tidak didefinisikan.' in /Users/feb/HTDocs/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/feb/HTDocs/framework/db/ar/CActiveRecord.php(145): CComponent->__get('nama')
+#1 /Users/feb/HTDocs/hotel/protected/views/layouts/main.php(480): CActiveRecord->__get('nama')
+#2 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#3 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#4 /Users/feb/HTDocs/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#5 /Users/feb/HTDocs/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="row...')
+#6 /Users/feb/HTDocs/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="row...')
+#7 /Users/feb/HTDocs/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /Users/feb/HTDocs/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /Users/feb/HTDocs/hotel/protected/views/layouts/column2.php(19): CBaseController->endContent()
+#10 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#11 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#12 /Users/feb/HTDocs/framework/web/CController.php(784): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#13 /Users/feb/HTDocs/hotel/protected/controllers/UserLevelController.php(11): CController->render('view', Array)
+#14 [internal function]: UserLevelController->actionView('1')
+#15 /Users/feb/HTDocs/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserLevelController), Array)
+#16 /Users/feb/HTDocs/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserLevelController), Object(ReflectionMethod), Array)
+#17 /Users/feb/HTDocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Users/feb/HTDocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /Users/feb/HTDocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): CController->run('view')
+#21 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('userLevel/view')
+#22 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/hotel/userLevel/view/1
+HTTP_REFERER=http://localhost/hotel/userLevel
+---
+2015/02/10 10:25:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/assets/img/avatars/7.jpg"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/assets/i...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/assets/img/avatars/7.jpg
+HTTP_REFERER=http://localhost/hotel/static/documentation/index.html
+---
+2015/02/10 10:25:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "static/vendor/plugins/datatables/media/js/jquery.dataTables.min.js"' in /Users/feb/HTDocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('static/vendor/p...')
+#1 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hotel/static/vendor/plugins/datatables/media/js/jquery.dataTables.min.js
+HTTP_REFERER=http://localhost/hotel/static/documentation/index.html
+---
+2015/02/10 11:03:38 [error] [exception.CException] exception 'CException' with message 'Properti "SiteController.baseName" tidak didefinisikan.' in /Users/feb/HTDocs/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/feb/HTDocs/hotel/protected/views/layouts/main.php(599): CComponent->__get('baseName')
+#1 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#2 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#3 /Users/feb/HTDocs/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#4 /Users/feb/HTDocs/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('')
+#5 /Users/feb/HTDocs/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('')
+#6 /Users/feb/HTDocs/framework/web/CBaseController.php(206): COutputProcessor->run()
+#7 /Users/feb/HTDocs/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/feb/HTDocs/hotel/protected/views/layouts/column1.php(4): CBaseController->endContent()
+#9 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#10 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#11 /Users/feb/HTDocs/framework/web/CController.php(784): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#12 /Users/feb/HTDocs/hotel/protected/controllers/SiteController.php(62): CController->render('index')
+#13 /Users/feb/HTDocs/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/feb/HTDocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/feb/HTDocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/feb/HTDocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): CController->run('')
+#18 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#19 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/hotel/
+HTTP_REFERER=http://localhost/hotel/site/login
+---
+2015/02/12 13:03:19 [error] [exception.CException] exception 'CException' with message 'Properti "MBilling.name" tidak didefinisikan.' in /Users/feb/HTDocs/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/feb/HTDocs/framework/db/ar/CActiveRecord.php(145): CComponent->__get('name')
+#1 /Users/feb/HTDocs/hotel/protected/views/mMenu/_form.php(43): CActiveRecord->__get('name')
+#2 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#3 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#4 /Users/feb/HTDocs/framework/web/CController.php(869): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#5 /Users/feb/HTDocs/hotel/protected/views/mMenu/update.php(12): CController->renderPartial('_form', Array)
+#6 /Users/feb/HTDocs/framework/web/CBaseController.php(126): require('/Users/feb/HTDo...')
+#7 /Users/feb/HTDocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/feb/HTDo...', Array, true)
+#8 /Users/feb/HTDocs/framework/web/CController.php(869): CBaseController->renderFile('/Users/feb/HTDo...', Array, true)
+#9 /Users/feb/HTDocs/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#10 /Users/feb/HTDocs/hotel/protected/controllers/MMenuController.php(48): CController->render('update', Array)
+#11 [internal function]: MMenuController->actionUpdate('4')
+#12 /Users/feb/HTDocs/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(MMenuController), Array)
+#13 /Users/feb/HTDocs/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MMenuController), Object(ReflectionMethod), Array)
+#14 /Users/feb/HTDocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/feb/HTDocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/feb/HTDocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/feb/HTDocs/framework/web/CWebApplication.php(282): CController->run('update')
+#18 /Users/feb/HTDocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mMenu/update')
+#19 /Users/feb/HTDocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /Users/feb/HTDocs/hotel/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/hotel/mMenu/update/4
+HTTP_REFERER=http://localhost/hotel/mMenu/index
+---
+2015/02/15 23:27:28 [error] [php] implode(): Invalid arguments passed (/Users/feb/HTDocs/hotelextjs/backend/protected/extensions/phpextjs/phpextjsCrud/templates/default/app/view/form.php:38)
+Stack trace:
+#0 /Users/feb/HTDocs/hotelextjs/backend/protected/extensions/phpextjs/phpextjsCrud/PHPExtJSCrudCode.php(102): PHPExtJSCrudCode->render()
+#1 /Users/feb/HTDocs/hotelextjs/framework/gii/CCodeGenerator.php(162): PHPExtJSCrudCode->prepare()
+#2 /Users/feb/HTDocs/hotelextjs/framework/gii/CCodeGenerator.php(63): PHPExtJSCrudGenerator->prepare()
+#3 /Users/feb/HTDocs/hotelextjs/framework/web/actions/CInlineAction.php(49): PHPExtJSCrudGenerator->actionIndex()
+#4 /Users/feb/HTDocs/hotelextjs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/feb/HTDocs/hotelextjs/framework/web/CController.php(286): PHPExtJSCrudGenerator->runAction()
+#6 /Users/feb/HTDocs/hotelextjs/framework/web/CController.php(265): PHPExtJSCrudGenerator->runActionWithFilters()
+#7 /Users/feb/HTDocs/hotelextjs/framework/web/CWebApplication.php(282): PHPExtJSCrudGenerator->run()
+#8 /Users/feb/HTDocs/hotelextjs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/feb/HTDocs/hotelextjs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/feb/HTDocs/hotelextjs/backend/index.php(14): CWebApplication->run()
+REQUEST_URI=/hotelextjs/backend/gii/phpextjsCrud/index
+in /Users/feb/HTDocs/hotelextjs/backend/protected/extensions/phpextjs/phpextjsCrud/templates/default/app/view/form.php (38)
+in /Users/feb/HTDocs/hotelextjs/backend/protected/extensions/phpextjs/phpextjsCrud/PHPExtJSCrudCode.php (102)
+in /Users/feb/HTDocs/hotelextjs/backend/index.php (14)
